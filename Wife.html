@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise</title>
+    <style>
+        :root {
+            --primary-pink: #f8bbd0;
+            --deep-rose: #880e4f;
+            --soft-white: #fffafa;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--soft-white);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            height: 60vh;
+            width: 100%;
+            background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), 
+                        url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2070') center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            color: var(--deep-rose);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .content-section {
+            max-width: 800px;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .heart {
+            color: #e91e63;
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .timeline {
+            border-left: 2px solid var(--primary-pink);
+            margin: 40px auto;
+            padding-left: 20px;
+            text-align: left;
+            width: fit-content;
+        }
+
+        .event {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .event::before {
+            content: '❤';
+            position: absolute;
+            left: -29px;
+            background: var(--soft-white);
+            color: var(--deep-rose);
+        }
+
+        footer {
+            padding: 40px;
+            background: var(--primary-pink);
+            width: 100%;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero-text">
+            <h1>To My Favorite Person</h1>
+            <p>A little something to say I love you.</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="heart">❤</div>
+        <h2>Our Story</h2>
+        <p>They say life is a collection of moments, but mine only started making sense once you were in them.</p>
+        
+        <div class="timeline">
+            <div class="event">
+                <strong>The Day We Met</strong>
+                <p>Add a little note here about your first impression!</p>
+            </div>
+            <div class="event">
+                <strong>Our First Adventure</strong>
+                <p>Remember that time we went to [Location]?</p>
+            </div>
+            <div class="event">
+                <strong>Today</strong>
+                <p>Still my favorite person to wake up to.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with love, just for you.</p>
+    </footer>
+
+</body>
+</html>
